@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+
+      #title {
+	  color: white;
+	  background-color: #bf6f2e;
+	  height: 50px;
+	  text-align: center;
+	  padding: 50px 0;
+	  border: 2px solid white;
+      }
+
+      body {
+	  background-color: #ffb375;
+	  color: white;
+	  font-family: Monospace, Courier New;
+      }
+
+      #text {
+	  background-color: #a15415;
+	  height: 300px;
+	  padding: 50px;
+	  border: 2px solid white;
+      }
+
+      button {
+	  background-color: #bdad8a;
+	  border: none;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <button onclick="history.back()">Home</button>
+
+    
+    <h1 id="title">Why my Digital Portfolio is important to me?</h1>
+
+    <p id="text">The digital portfolio is important to me because </p>
+  </body>
+
+</html>

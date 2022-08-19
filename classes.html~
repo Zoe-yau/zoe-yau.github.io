@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <style>
+
+      #title {
+	  color: white;
+	  background-color: #f5bc1b;
+	  height: 50px;
+	  text-align: center;
+	  padding: 50px 0;
+	  border: 2px solid white;
+      }
+
+      body {
+	  background-color: #fae3a2;
+	  color: white;
+	  font-family: Monospace, Courier New;
+      }
+
+      #text {
+	  background-color: #cfa534;
+	  height: 300px;
+	  padding: 50px;
+	  border: 2px solid white;
+      }
+
+      a {
+	  background-color: #FFCC10;
+	  width: 100%;
+	  border: none;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  font-family: Monospace, Courier New;
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  color: white;
+	  position: absolute;
+	  right:    0;
+	  bottom:   70;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <a href = "index.html" target="_blank">Home</a>
+    
+    <h1 id="title">Classes</h1>
+
+    <p id="text">Computer Science 1</p>
+  </body>
+
+</html>

@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <style>
+
+      #title {
+	  color: white;
+	  background-color: #764a94;
+	  height: 25px;
+	  text-align: center;
+	  padding: 50px 0;
+	  border: 2px solid white;
+      }
+
+      body {
+	  background-color: #a355cf;
+	  color: white;
+	  font-family: Monospace, Courier New;
+      }
+            
+      #topImage {
+	  float: right;
+      }
+
+      #bottomImage {
+	  position: absolute;
+	  bottom: 200;
+	  right: 23;
+
+      }
+
+      a {
+	  background-color: purple;
+	  width: 100%;
+	  border: none;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  font-family: Monospace, Courier New;
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  color: white;
+	  position: absolute;
+	  right:    0;
+	  bottom:   70;
+      }
+
+
+      .tab {
+          overflow: hidden;
+          background-color: #904ab5;
+
+      }
+
+
+      .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+	  color: white;
+	  font-family: Monospace, Courier New
+      }
+
+      
+      .tab button:hover {
+          background-color: #681994;
+      }
+
+      
+      .tab button.active {
+          background-color: #81519c;
+      }
+
+      .tabcontent {
+	  background-color: #886b9c;
+	  height: 500px;
+	  padding: 50px;
+	  border: 2px solid white;
+          display: none;
+          padding: 6px 12px;
+          border-top: none;
+      }
+
+      #Ben {
+	  position: absolute;
+	  top: 20px;
+	  right: 20px;
+	  font-size: 18px;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1 id="title">ISP</h1>
+
+    
+    <img id="Ben" src="mrBen.png" alt="Mr. Ben-Yakov" width="100" height="100">
+
+    <h3 id="sideNote">Click the words to navigate!</h3>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Concept')">Concept</button>
+      <button class="tablinks" onclick="openTab(event, 'Motivation')">Motivation</button>
+      <button class="tablinks" onclick="openTab(event, 'Code')">Code Segments and Explanations</button>
+      <button class="tablinks" onclick="openTab(event, 'Conclusions')">Conclusions - what went as expected; what did not, and why</button>
+    </div>
+
+
+    <div id="Concept" class="tabcontent">
+
+      <p>A game where the player will get six anonymous contestants as potential love interests. <br> They will be hidden to the player until the end of the game. The contests are asked a list of questions, <br> and the player will pick whose answer they like best. At the end the answers are tallied up and the <br> most chosen contestant is the one for the player.</p>
+
+      <img src="game.jpg" alt="Code" width="300" height="200">
+      
+    </div>
+
+    <div id="Motivation" class="tabcontent">
+      <p>My friends and I really enjoyed watching dating shows like the bachelorette, <br> so we wanted to make a game for us to play with a similar concept. <br> Something that would be fun and enjoyable and easy to understand. </p>
+    </div>
+
+    <div id="Concept" class="tabcontent">
+      <p></p>
+    </div>
+
+    <div id="Code" class="tabcontent">
+
+      <img id="topImage" src="code1.png" alt="Code" width="300" height="200">
+
+      <ul>
+      <li>The update single stack function is how each answer choice changes for each question</li>
+
+      <br>
+      
+      <li>Choice button pressed function tallies up the answers by taking into account which answer was chosen</li>
+
+      <br>
+      
+      <img id="bottomImage" src="code2.png" alt="Code" width="300" height="200">
+
+      <li> The calculate personality result function calculates the result by taking each picked answer <br>
+	and storing the choice in a variable. It then sorts through the chosen answers to figure out which had <br>
+	the highest chosen frequency</li>
+      </ul>
+    </div>
+
+    <div id="Conclusions" class="tabcontent">
+      <p>The overall design and the idea of the game went well. However, we origianlly wanted to have more contestants <br> but because of the time limit we were only able to draw 6. Also in the game initially we wanted to have only 3 contestants <br> to be options but we eventually changed that to all because it gave the game a variety of choices making it more fun. <br> Overall, we had a really great time getting to collaborate and create an awesome game! </p>
+    </div>
+
+
+    
+    <a href = "index.html" target="_blank">Home</a>
+
+    <script>
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          var tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
+
+  </body>
+
+</html>
