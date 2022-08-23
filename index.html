@@ -1,6 +1,6 @@
 <html>
     <head>
-      <h1 id="Header"> Zoe Yau Digital Portfolio</h1>
+      <h1 id="Header"> Zoe Yau - Digital Portfolio</h1>
 
       <link rel="stylesheet" href="style.css">
       
@@ -52,6 +52,7 @@
 	    text-align: center;
 	    transition: 0.3s;
 	    font-size: 20px;
+	    font-family: Monospace, Courier New;
 
 	}
 
@@ -75,14 +76,18 @@
 
 	}
 
-	img {
+	#flower {
 	    padding: 100px;
 	}
 
 	#sideNote {
-	    float: right;
+	    padding-left: 350px;
+	    position: relative;
+	    top: 80px;
 	    color: white;
+	
 	}
+
 
       </style>
     
@@ -92,18 +97,17 @@
 
     <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
     
-    <img src="flower.png" alt="Flower" width="500" height="500">
+    <img id="flower" src="flower.png" alt="Flower" width="500" height="500">
+    <img src="panda.png" alt="Flower" width="500" height="500">
+			   
+
     
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'AboutMe')"><a href = "aboutMe.html" target="_blank">About Me</a></button>
-
-      <button class="tablinks" onclick="openTab(event, 'ISP')"><a href = "whyImportant.html" target="_blank">Why my Digital Portfolio is important to me?</button>
-      
-      <button class="tablinks" onclick="openTab(event, 'Classes')"><a href = "classes.html" target="_blank">Classes</button>
-
-      <button class="tablinks" onclick="openTab(event, 'ISP')"><a href = "ISP.html" target="_blank">ISP</button>
-
-      <button class="tablinks" onclick="openTab(event, 'ISP')"><a href = "learned.html" target="_blank">What I've learned in CS last year</button>
+      <button class="tablinks" onclick="openTab(event, 'AboutMe')"><a href = "aboutMe.html" target="_blank"> About Me </a></button>
+      <button class="tablinks" onclick="openTab(event, 'Important')"><a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a></button>
+      <button class="tablinks" onclick="openTab(event, 'Classes')"><a href = "classes.html" target="_blank"> Classes </a></button>
+      <button class="tablinks" onclick="openTab(event, 'ISP')"> <a href = "ISP.html" target="_blank"> ISP </a></button>
+      <button class="tablinks" onclick="openTab(event, 'Learned')"><a href = "learned.html" target="_blank"> What Ive learned in CS last year </a></button>
 
     </div>
 
