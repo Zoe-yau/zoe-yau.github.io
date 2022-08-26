@@ -1,11 +1,12 @@
 <html>
-    <head>
+  <head>
+    <title> Index </title>
+    
       <h1 id="Header"> Zoe Yau - Digital Portfolio</h1>
 
       <link rel="stylesheet" href="style.css">
       
       <style>     
-
 
 	#Header {
 	    color: white;
@@ -35,7 +36,7 @@
 	    overflow: hidden;
 	    float: left;
 	    background-color: #964448;
-	    height: 650px;
+	    height: 850px;
 	    width: 250px;
 	    border: 2px solid white;
 
@@ -88,6 +89,21 @@
 	
 	}
 
+	#panda {
+	    position: absolute;
+	    top: 8px;
+	    right: 26px;
+	}
+
+	#link {
+	    position: absolute;
+	    right: 26px;
+	    background-color: #E86969;
+	    border: 2px solid white;
+	    padding: 20px;
+	    height: 60px;
+	    margin: 20px;
+	}
 
       </style>
     
@@ -98,16 +114,18 @@
     <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
     
     <img id="flower" src="flower.png" alt="Flower" width="500" height="500">
-    <img src="panda.png" alt="Flower" width="500" height="500">
+    <img id="panda" src="panda.png" alt="Panda" width="200" height="200">
 			   
 
+    <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank">Click Here to see <br> my Digital Portfolio!</a>
     
     <div class="tab">
       <button class="tablinks" onclick="openTab(event, 'AboutMe')"><a href = "aboutMe.html" target="_blank"> About Me </a></button>
       <button class="tablinks" onclick="openTab(event, 'Important')"><a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a></button>
       <button class="tablinks" onclick="openTab(event, 'Classes')"><a href = "classes.html" target="_blank"> Classes </a></button>
       <button class="tablinks" onclick="openTab(event, 'ISP')"> <a href = "ISP.html" target="_blank"> ISP </a></button>
-      <button class="tablinks" onclick="openTab(event, 'Learned')"><a href = "learned.html" target="_blank"> What Ive learned in CS last year </a></button>
+      <button class="tablinks" onclick="openTab(event, 'Learned')"><a href = "learned.html" target="_blank"> What I&apos;ve learned in CS last year </a></button>
+      <button class="tablinks" onclick="openTab(event, 'FingerPrints')"><a href = "fingerprints.html" target="_blank"> Fingerprints </a></button>
 
     </div>
 

@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <style>
+
+      #title {
+	  color: white;
+	  background-color: #A11B1B;
+	  height: 50px;
+	  text-align: center;
+	  padding: 50px 0;
+	  border: 2px solid white;
+      }
+
+      body {
+	  background-color: #EF4F4F;
+	  color: white;
+	  font-family: Monospace, Courier New;
+      }
+
+
+      a {
+	  background-color: red;
+	  width: 100%;
+	  border: none;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	  font-family: Monospace, Courier New;
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  color: white;
+	  position: absolute;
+	  right:    0;
+	  bottom:   70;
+      }
+
+      #printsright {
+	  position: absolute;
+	  top: 20px;
+	  right: 36px;
+      }
+
+      #printsleft {
+	  position: absolute;
+	  top: 20px;
+	  left: 36px;
+	  transform: rotate(180deg);
+	  transform: scaleY(-1)
+
+      }
+
+      .tab {
+          overflow: hidden;
+          background-color: #A93B3B;
+
+      }
+
+
+      .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+	  color: white;
+	  font-family: Monospace, Courier New
+      }
+      
+      .tab button:hover {
+          background-color: #5E1616;
+      }
+
+      
+      .tab button.active {
+          background-color: #FF0505;
+      }
+
+      
+      .tabcontent {
+	  background-color: #B62323;
+	  height: 700px;
+	  padding: 50px;
+	  border: 2px solid white;
+          display: none;
+          border-top: none;
+
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <a href = "index.html" target="_blank">Home</a>
+
+    <img id="printsright" src="footprints.png" alt="footprints" width="135" height="135">
+    <img id="printsleft" src="footprints.png" alt="footprints" width="135" height="135">
+    
+    <h1 id="title">Fingerprints</h1>
+
+    <h3>Click the words to navigate!</h3>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Essay')"> Essay </button>
+      <button class="tablinks" onclick="openTab(event, 'FlowChart')"> Flow Chart </button>
+      <button class="tablinks" onclick="openTab(event, 'Citation')"> Citations </button>
+      
+    </div>
+
+    <div id="Essay" class="tabcontent">
+
+      <p id="text"> 
+	&emsp;&emsp; HTTPS is a secure connection for websites that have the purposes of ensuring a <br>  user's security and privacy. HTTPS makes it harder and more limited for people such <br> as the FBI and schools to monitor the activity of users on the internet. In order to get <br> around that they use devices known as HTTPS Proxy Appliances which are a way for <br> people such as the FBI to look into people's activity on the internet. <br>
+	&emsp;&emsp; MITM is a man in the middle attack. It is a term used for a perpetrator positions <br> themselves in a conversation between a user and an application. They do this either to <br> eavesdrop or to impersonate one of the parties making the situation seem like a normal <br> exchange. It is risky because whatever information is obtained by the perpetrator could <br> be used for ill-purposes like identity theft.<br>
+	&emsp;&emsp; A Hash is a complex mathematical algorithm which carefully processes every <br> single bit of what they <q>digest</q> The essential qualities that make a has a  <br> <q>good</q> hash is that it has sensitive and strong detection of anything changed <br> anywhere in a security certificate. In the case of one bit inside the certificate being <br> changed half of the fingerprint&apos;s hash bits will change as well. <br>
+	&emsp;&emsp; CA also known as certificate authorities have the role of proving websites <br> identities in the real world using documentation, their known telephone numbers, etc. <br> After a website proves its identity the CA will put their reputation on the line by digitally <br> signing the site’s security certificate which contains an assertion of its identity. <br>
+	&emsp;&emsp; The SSL interception can not be prevented but it can be detected because it is <br> not possible to completely imitate any security certificate. Public and private keys form <br> cryptographically matched pairs. The SSL security certificates provide the site&apos;s Public <br> key to the public whereas the private one is never disclosed. The interception does not <br> have the private key and they may be able to fake one but it wont match, so the <br> interception is able to be detected. <br>
+	&emsp;&emsp; A false-positive is when massive companies distribute multiple security <br> certificates to different servers and websites globally the comparison of the certificates <br> may lead people to thinking that their connection was intercepted. However they have <br> actually just received a different certificate. A false negative is when their connection <br>  was intercepted but was not alerted. <br>
+	&emsp;&emsp; In my opinion my school, government, and ISP shouldn&apos;t have the right <br> to eavesdrop on communications. It is an invasion of privacy and ethically wrong. The <br> information that is gathered can be used against <br>  me in the future and it goes against freedom of speech. Also they sell my information to  <br> corporations without my consent. This all makes privacy become obsolete.
+      </p>
+
+    </div>
+
+    <div id="Citation" class="tabcontent">
+
+      <p><b> Shabi, T., Hasson, E., Gravier, O., Hasson, E., Hasson, E., Avital, N., S.L., Lynch, B.,<br> & Lynch, B. (2019, December 29). <i>What is MITM (Man in the Middle) Attack | <br> Imperva.</i> Learning Center. <br> https://www.imperva.com/learn/application-security/man-in-the-middle-attack-mitm/ </b> </p>
+
+      <p><b> Steve Gibson, GIBSON RESEARCH CORPORATION. <q>GRC : SSL TLS HTTPS Web Server Certificate <br> Fingerprints .</q> GRC | <i> SSL TLS HTTPS Web Server Certificate Fingerprints </i> , <br> https://www.grc.com/fingerprints.htm#top. </b></p>
+      
+	
+    </div>
+
+    <div id="FlowChart" class="tabcontent">
+
+      <img src="flowChart.png" alt="Flow Chart" width="500" height="500">
+      
+    </div>
+    
+    <script>
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          var tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
+
+    
+  </body>
+
+</html>
