@@ -1,0 +1,32 @@
+.tab {
+    overflow: hidden;
+    float: left;
+    width: 250px;
+    border: 2px solid white;
+
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 44px 32px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: Monospace, Courier New;
+
+}
+
+
+.content {
+    float:left;
+    padding: 3px 15px;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+
+}
