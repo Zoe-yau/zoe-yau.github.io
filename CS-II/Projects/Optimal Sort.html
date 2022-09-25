@@ -1,0 +1,157 @@
+<html>
+  <head>
+
+    <link rel="stylesheet" href="../../css/backLink.css">
+    <link rel="stylesheet" href="../../css/tabsHorizontal.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    
+    <style>
+
+      .header {
+	  background-color: #367A47;
+
+      }
+
+      body {
+	  background-color: #0E421B;
+	  color: white;
+	  font-family: Monospace, Courier New;
+      }
+
+      #cat {
+	  padding: 50px;
+      }
+
+
+      .back {
+	  background-color: #4EC279;
+
+      }
+
+      #printsright {
+	  position: absolute;
+	  top: 20px;
+	  right: 36px;
+      }
+
+      #printsleft {
+	  position: absolute;
+	  top: 20px;
+	  left: 36px;
+	  transform: rotate(180deg);
+	  transform: scaleY(-1);
+
+      }
+
+      #spreadsheetLink {
+	  font-family: Monospace, Courier New;
+	  color: white;
+      }
+
+      .tab {
+          overflow: hidden;
+          background-color: #3F8C52;
+
+      }
+
+      
+      .tab button:hover {
+          background-color: #5C8C68;
+      }
+
+
+      .tab button.active {
+          background-color: #76C88A;
+      }
+
+      
+      .tabcontent {
+	  background-color: #6B9375;
+      }
+
+      #SourceCodelnk {
+	  color: white;
+	  font-family: Monospace, Courier New;
+      }
+
+      #group {
+	  text-align: right;
+      }
+
+      #bear {
+	  position: absolute;
+	  top: 20px;
+	  right: 56px;
+
+      }
+      
+    </style>
+
+    <title> Optimal Sort </title>
+      
+  </head>
+
+  <body>
+    
+    <h1 class="header"> Optimal Sort </h1>
+
+    <img id="bear" src="../../images/bear.png" alt="Flower" width="135" height="135">
+    
+    <p id="group"> Group: Alan Roybal, Zoe Yau, Adheesh Katru, Heng Yi Lee </p>
+    
+    <h3>Click the words to navigate!</h3>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Link')"> Github Link </button>
+      <button class="tablinks" onclick="openTab(event, 'FlowChart')"> Flow Chart </button>
+      <button class="tablinks" onclick="openTab(event, 'Spreadsheet')"> Spreadsheet </button>
+      
+    </div>
+
+    <div id="Link" class="tabcontent">
+
+          <p> Click the cat to go to the github! </p>
+          
+      <a id="SourceCodelnk" href = "https://github.com/AlanRoybal/SortingAlgorithm"> <img id="cat" src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+
+
+    </div>
+
+    </div>
+
+    <div id="FlowChart" class="tabcontent">
+      <img id="cat" src="../../images/SortChart.png" alt="cat" width="500" height="500">
+      
+    </div>
+
+    
+    <div id="Spreadsheet" class="tabcontent">
+
+      <p> Click to see Spreadsheet!<p>
+	
+      <a href = "https://docs.google.com/spreadsheets/d/1gZGOZT0n0J7knr0OPfO2RaTwvl8f8081O9kz3MK-WEQ/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
+
+    </div>
+
+    <a class="back" href = "Projects.html" target="_blank">Back</a>
+    
+    <script>
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          var tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
+
+    
+  </body>
+
+</html>

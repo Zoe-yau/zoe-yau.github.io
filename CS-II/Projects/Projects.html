@@ -1,0 +1,97 @@
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="../../css/backLink.css">
+    <link rel="stylesheet" href="../../css/tabsVertical.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    
+    <title> Projects </title>
+    
+      <h1 class="header"> Projects </h1>
+
+      <style>     
+
+	.header {
+	    background-color: #102764;
+
+	}
+      
+	#body {
+	    background-color: #324168;
+	    font-family: Monospace, Courier New;
+
+	}
+
+	a {
+	    color: white;
+	    font-family: Monospace, Courier New;
+	    text-decoration: none;
+
+	}
+ 
+	#colorTab {
+	    background-color: #192954;
+	    height: 150px;
+	}
+	
+	#sideNote {
+	    padding-left: 350px;
+	    position: relative;
+	    top: 80px;
+	    color: white;
+	
+	}
+
+
+	#moon {
+	    position: absolute;
+	    top: 20px;
+	    right: 36px;
+	}
+	
+      .back {
+	  background-color: #1B2541;
+      }
+
+      </style>
+    
+  </head>
+
+  <body id="body">
+
+    <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
+
+    <img id="moon" src="../../images/moonCloud.png" alt="Moon" width="400" height="400">
+			   
+    <div id="colorTab" class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Projects')"><a href = "Optimal Sort.html" target="_blank"> Optimal Sort </a></button>
+
+    </div>
+
+    <a class="back" href = "../index.html" target="_blank"> Back </a>
+
+    
+    <script>
+
+      function openTab(evt, tabName) {
+          var i, content, tablinks;
+          var content = document.getElementsByClassName("content");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+
+      
+    </script>
+
+  </body>
+
+</html>
+
+
