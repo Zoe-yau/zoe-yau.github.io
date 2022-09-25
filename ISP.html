@@ -1,14 +1,14 @@
 <html>
   <head>
+
+    <link rel="stylesheet" href="css/backLink.css">
+    <link rel="stylesheet" href="css/tabsHorizontal.css">
+    <link rel="stylesheet" href="css/header.css">
+    
     <style>
 
-      #title {
-	  color: white;
+      .header {
 	  background-color: #764a94;
-	  height: 25px;
-	  text-align: center;
-	  padding: 50px 0;
-	  border: 2px solid white;
       }
 
       body {
@@ -17,88 +17,51 @@
 	  font-family: Monospace, Courier New;
       }
             
-      #topImage {
-	  position: absolute;
-	  right: 123;
+      .codeImage {
+	  position: relative;
 
       }
 
-      #bottomImage {
-	  position: absolute;
-	  bottom: 650;
-	  right: 123;
-
-      }
-
-      a {
-	  background-color: purple;
-	  width: 100%;
-	  border: none;
-	  padding: 15px 32px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  margin: 4px 2px;
-	  cursor: pointer;
-	  font-family: Monospace, Courier New;
-	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	  color: white;
-	  position: absolute;
-	  right:    0;
-	  bottom:   70;
+      .back {
+	  background-color: #602A87;
       }
 
       #Ben {
 	  position: absolute;
-	  bottom: 100px;
+	  top: 80px;
 	  right: 20px;
 	  font-size: 18px;
 	  transform: scaleX(-1);
       }
 
-
+      
       .tab {
-          overflow: hidden;
-          background-color: #904ab5;
+	  overflow: hidden;
+	  background-color: #904ab5;
 
-      }
-
-
-      .tab button {
-          background-color: inherit;
-          float: left;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          padding: 14px 16px;
-          transition: 0.3s;
-          font-size: 17px;
-	  color: white;
-	  font-family: Monospace, Courier New;
       }
 
       
       .tab button:hover {
-          background-color: #681994;
+	  background-color: #681994;
       }
-      
+
 
       .tab button.active {
-          background-color: #81519c;
+	  background-color: #81519c;
       }
 
-      
+
       .tabcontent {
 	  background-color: #886b9c;
-	  height: 500px;
-	  border: 2px solid white;
-          display: none;
-          padding: 6px 12px;
-          border-top: none;
+	  line-height: 40px;
+	  padding-top: 20px;
+	  padding-left: 30px;
+	  padding-right: 300px;
+	  padding-bottom: 56px;
+
       }
 
-      
     </style>
 
     <title> ISP </title>
@@ -106,12 +69,14 @@
 
   <body>
 
-    <h1 id="title">ISP</h1>
+    <h1 class="header">ISP</h1>
 
     
-    <img id="Ben" src="images/mrBen.png" alt="Mr. Ben-Yakov" width="300" height="300">
+    <img id="Ben" src="images/mrBen.png" alt="Mr. Ben-Yakov" width="170" height="170">
 
-    <h3>Click the words to navigate!</h3>
+    
+<h3>&emsp; Click the words to navigate!</h3>
+
     
     <div class="tab">
       <button class="tablinks" onclick="openTab(event, 'Concept')"> Concept </button>
@@ -121,25 +86,22 @@
     </div>
 
 
+    
     <div id="Concept" class="tabcontent">
-
-      <p>A game where the player will get six anonymous contestants as potential love interests. <br> They will be hidden to the player until the end of the game. The contests are asked a list of questions, <br> and the player will pick whose answer they like best. At the end the answers are tallied up and the <br> most chosen contestant is the one for the player.</p>
+      <p> &emsp;&emsp; A game where the player will get six anonymous contestants as potential love interests. They will be hidden to the player until the end of the game. The contests are asked a list of questions, and the player will pick whose answer they like best. At the end the answers are tallied up and the most chosen contestant is the one for the player.</p>
 
       <img src="images/game.jpg" alt="Code" width="300" height="200">
-      
     </div>
+
+    
 
     <div id="Motivation" class="tabcontent">
-      <p>My friends and I really enjoyed watching dating shows like the bachelorette, <br> so we wanted to make a game for us to play with a similar concept. <br> Something that would be fun and enjoyable and easy to understand. </p>
+      <p> &emsp;&emsp; My friends and I really enjoyed watching dating shows like the bachelorette, so we wanted to make a game for us to play with a similar concept. Something that would be fun and enjoyable and easy to understand. </p>
     </div>
 
-    <div id="Concept" class="tabcontent">
-      <p></p>
-    </div>
 
+    
     <div id="Code" class="tabcontent">
-
-      <img id="topImage" src="images/code1.png" alt="Code" width="300" height="200">
 
       <ul>
       <li>The update single stack function is how each answer choice changes for each question</li>
@@ -150,21 +112,23 @@
 
       <br>
       
-      <img id="bottomImage" src="images/code2.png" alt="Code" width="300" height="200">
-
-      <li> The calculate personality result function calculates the result by taking each picked answer <br>
-	and storing the choice in a variable. It then sorts through the chosen answers to figure out which had <br>
-	the highest chosen frequency</li>
+      <li> The calculate personality result function calculates the result by taking each picked answer and storing the choice in a variable. It then sorts through the chosen answers to figure out which had the highest chosen frequency</li>
       </ul>
-    </div>
 
-    <div id="Conclusions" class="tabcontent">
-      <p>The overall design and the idea of the game went well. However, we origianlly wanted to have more contestants <br> but because of the time limit we were only able to draw 6. Also in the game initially we wanted to have only 3 contestants <br> to be options but we eventually changed that to all because it gave the game a variety of choices making it more fun. <br> Overall, we had a really great time getting to collaborate and create an awesome game! </p>
+
+      <img class="codeImage" src="images/code1.png" alt="Code" width="300" height="200">
+      
+      <img class="codeImage" src="images/code2.png" alt="Code" width="300" height="200">
     </div>
 
 
     
-    <a href = "index.html" target="_blank">Home</a>
+    <div id="Conclusions" class="tabcontent">
+      <p> &emsp;&emsp; The overall design and the idea of the game went well. However, we origianlly wanted to have more contestants but because of the time limit we were only able to draw 6. Also in the game initially we wanted to have only 3 contestants to be options but we eventually changed that to all because it gave the game a variety of choices making it more fun. Overall, we had a really great time getting to collaborate and create an awesome game! </p>
+    </div>
+
+    
+    <a class="back" href = "index.html" target="_blank"> Back </a>
 
     <script>
       function openTab(evt, tabName) {

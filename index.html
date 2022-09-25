@@ -1,20 +1,17 @@
 <html>
   <head>
+    
+    <link rel="stylesheet" href="css/tabsVertical.css">
+    <link rel="stylesheet" href="css/header.css">
+    
     <title> Index </title>
     
-      <h1 id="Header"> Zoe Yau - Digital Portfolio</h1>
+      <h1 class="header"> Zoe Yau - Digital Portfolio</h1>
 
-      <link rel="stylesheet" href="style.css">
-      
       <style>     
 
-	#Header {
-	    color: white;
+	.header {
 	    background-color: #D46A6A;
-	    height: 80px;
-	    text-align: center;
-	    padding: 50px 0;
-	    border: 2px solid white;
 
 	}
       
@@ -24,7 +21,6 @@
 
 	}
 
-
 	a {
 	    color: white;
 	    font-family: Monospace, Courier New;
@@ -32,50 +28,6 @@
 
 	}
  
-	.tab {
-	    overflow: hidden;
-	    float: left;
-	    background-color: #964448;
-	    height: 850px;
-	    width: 250px;
-	    border: 2px solid white;
-
-	}
-
-	.tab button {
-	    display: block;
-	    background-color: inherit;
-	    color: white;
-	    padding: 44px 32px;
-	    width: 100%;
-	    border: none;
-	    outline: none;
-	    text-align: center;
-	    transition: 0.3s;
-	    font-size: 20px;
-	    font-family: Monospace, Courier New;
-
-	}
-
-	.tabbutton:hover {
-	    background-color: #D6ABAE
-
-	}
-
-	.tab button.active {
-	    background-color: #f83
-
-
-	}
-
-	.content {
-	    float:left;
-	    padding: 3px 15px;
-	    width: 70%;
-	    border-left: none;
-	    height: 300px;
-
-	}
 
 	#flower {
 	    padding: 100px;
@@ -112,6 +64,11 @@
 
 	}
 
+	#tabColor {
+	    background-color: #964448;
+	    height: 850px;
+	}
+
       </style>
     
   </head>
@@ -121,13 +78,13 @@
     <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
     
     <img id="flower" src="images/flower.png" alt="Flower" width="500" height="500">
-    <img id="panda" src="images/panda.png" alt="Panda" width="200" height="200">
+    <img id="panda" src="images/panda.png" alt="Panda" width="150" height="150">
 			   
 
     <p id="caption"> Click the cat to see my <br> Digital Portfolio github!</p>
     <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="200" height="200"></a>
     
-    <div class="tab">
+    <div id="tabColor" class="tab">
       <button class="tablinks" onclick="openTab(event, 'AboutMe')"><a href = "aboutMe.html" target="_blank"> About Me </a></button>
       <button class="tablinks" onclick="openTab(event, 'Important')"><a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a></button>
       <button class="tablinks" onclick="openTab(event, 'Classes')"><a href = "classes.html" target="_blank"> Classes </a></button>
