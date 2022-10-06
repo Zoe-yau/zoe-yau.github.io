@@ -18,35 +18,12 @@
 	  font-family: Monospace, Courier New;
       }
 
-      #cat {
-	  padding: 50px;
-      }
-
 
       .back {
 	  background-color: #4EC279;
 
       }
 
-      #printsright {
-	  position: absolute;
-	  top: 20px;
-	  right: 36px;
-      }
-
-      #printsleft {
-	  position: absolute;
-	  top: 20px;
-	  left: 36px;
-	  transform: rotate(180deg);
-	  transform: scaleY(-1);
-
-      }
-
-      #spreadsheetLink {
-	  font-family: Monospace, Courier New;
-	  color: white;
-      }
 
       .tab {
           overflow: hidden;
@@ -67,10 +44,10 @@
       
       .tabcontent {
 	  background-color: #6B9375;
-	  height: 700px;
+	  height: 1000px;
       }
 
-      #SourceCodelnk {
+      #OptiamlCodelnk {
 	  color: white;
 	  font-family: Monospace, Courier New;
       }
@@ -85,55 +62,67 @@
 	  right: 56px;
 
       }
+
+      #OptimalChart {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+      }
       
     </style>
 
-    <title> Optimal Sort </title>
+    <title> Sorts </title>
       
   </head>
+  
 
   <body>
     
-    <h1 class="header"> Optimal Sort </h1>
+    <h1 class="header"> Sorts </h1>
 
     <img id="bear" src="../../images/bear.png" alt="Flower" width="135" height="135">
     
-    <p id="group"> Group: Alan Roybal, Zoe Yau, Adheesh Katru, Heng Yi Lee </p>
     
     <h3>Click the words to navigate!</h3>
     
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Link')"> Github Link </button>
-      <button class="tablinks" onclick="openTab(event, 'FlowChart')"> Flow Chart </button>
-      <button class="tablinks" onclick="openTab(event, 'Spreadsheet')"> Spreadsheet </button>
-      
-    </div>
-
-    <div id="Link" class="tabcontent">
-
-          <p> Click the cat to go to the github! </p>
-          
-      <a id="SourceCodelnk" href = "https://github.com/AlanRoybal/SortingAlgorithm"> <img id="cat" src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
-
-
-    </div>
-
-    </div>
-
-    <div id="FlowChart" class="tabcontent">
-      <img id="cat" src="../../images/SortChart.png" alt="cat" width="500" height="500">
+      <button class="tablinks" onclick="openTab(event, 'OptimalSort')"> Opitmal Sort </button>
+      <button class="tablinks" onclick="openTab(event, 'BubbleSort')"> Bubble Sort </button>
+      <button class="tablinks" onclick="openTab(event, 'InsertionSort')">  Insertion Sort </button>
+      <button class="tablinks" onclick="openTab(event, 'SelectionSort')"> Selection Sort </button>
       
     </div>
 
     
-    <div id="Spreadsheet" class="tabcontent">
+    <div id="OptimalSort" class="tabcontent">
 
-      <p> Click to see Spreadsheet!<p>
+      <p id="group"> Group: Alan Roybal, Zoe Yau, Adheesh Katru, Heng Yi Lee </p>
+      
+          <p> Click the cat to go to the github! </p>
+          
+      <a id="OptimalCodelnk" href = "https://github.com/AlanRoybal/SortingAlgorithm"> <img id="cat" src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+
+            <p> Click the spreadsheet to see the spreadsheet!<p>
 	
       <a href = "https://docs.google.com/spreadsheets/d/1gZGOZT0n0J7knr0OPfO2RaTwvl8f8081O9kz3MK-WEQ/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
 
+      <img id="OptimalChart" src="../../images/SortChart.png" alt="cat" width="500" height="500">
+      
+
     </div>
 
+
+    <div id="BubbleSort" class="tabcontent">
+    </div>
+
+    <div id="InsertionSort" class="tabcontent">
+    </div>
+    
+    <div id="SelectionSort" class="tabcontent">
+    </div>
+    
+
+	  
     <a class="back" href = "Projects.html" target="_blank">Back</a>
     
     <script>

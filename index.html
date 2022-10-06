@@ -1,17 +1,23 @@
 <html>
   <head>
     
-    <link rel="stylesheet" href="css/tabsVertical.css">
-    <link rel="stylesheet" href="css/header.css">
-    
+    <link rel="stylesheet" href="css/vertical.css">
+    <link rel="stylesheet" href="css/title.css">
+
+
     <title> Index </title>
-    
-      <h1 class="header"> Zoe Yau - Digital Portfolio</h1>
 
       <style>     
 
-	.header {
+	.title {
 	    background-color: #D46A6A;
+	    text-align: center;
+	    color: white;
+	    padding: 30px;
+	    width: 110%;
+	    height: 100px;
+	    position: absolute;
+	    top: -20;
 
 	}
       
@@ -21,22 +27,99 @@
 
 	}
 
+		/*
+	.sidebar {
+	    height: 100%;
+	    width: 0;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	    background-color: #111;
+	    overflow-x: hidden;
+	    transition: 0.5s;
+	    padding-top: 60px;
+	}
+
+	.sidebar a {
+	    padding: 8px 8px 8px 32px;
+	    text-decoration: none;
+	    font-size: 25px;
+	    color: #818181;
+	    display: block;
+	    transition: 0.3s;
+	}
+
+	.sidebar a:hover {
+	    color: #f1f1f1;
+	}
+
+	.sidebar .closebtn {
+	    position: absolute;
+	    top: 0;
+	    right: 25px;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+
+	.openbtn {
+	    font-size: 20px;
+	    cursor: pointer;
+	    background-color: #111;
+	    color: white;
+	    padding: 10px 15px;
+	    border: none;
+	}
+
+	.openbtn:hover {
+	    background-color: #444;
+	}
+
+	#main {
+	    transition: margin-left .5s;
+	    padding: 16px;
+	}
+
+*/
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+	/*
+	@media screen and (max-height: 450px) {
+	    .sidebar {padding-top: 15px;}
+	    .sidebar a {font-size: 18px;}
+	}
+
+*/
+	.tab {
+	    background-color: black;
+	    height: 100%;
+	}
+	
+	.tab a:hover {
+	    background-color: #964448;
+	    opacity: 0.5;
+
+	}
+
+
 	a {
 	    color: white;
 	    font-family: Monospace, Courier New;
 	    text-decoration: none;
 
 	}
- 
 
 	#flower {
-	    padding: 100px;
+	    display: block;
+	    position: absolute;
+	    top: 300px;
+	    left: 400px;
 	}
 
 	#sideNote {
 	    padding-left: 350px;
-	    position: relative;
-	    top: 80px;
+	    position: absolute;
+	    top: 200px;
 	    color: white;
 	
 	}
@@ -49,10 +132,9 @@
 
 	#link {
 	    position: absolute;
-	    right: 26px;
-	    padding: 20px;
-	    height: 60px;
-	    margin: 20px;
+	    right: 46;
+	    bottom: 40;
+
 	}
 
 	#caption {
@@ -64,55 +146,69 @@
 
 	}
 
-	#tabColor {
-	    background-color: #964448;
-	    height: 850px;
-	}
-
       </style>
-    
+      
   </head>
-
+      
   <body id="body">
+    
+    <h1 class="title"> Zoe Yau - Digital Portfolio </h1>
 
     <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
     
     <img id="flower" src="images/flower.png" alt="Flower" width="500" height="500">
-    <img id="panda" src="images/panda.png" alt="Panda" width="150" height="150">
-			   
 
-    <p id="caption"> Click the cat to see my <br> Digital Portfolio github!</p>
-    <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="200" height="200"></a>
+    <img id="panda" src="images/panda.png" alt="Panda" width="150" height="150"> 
+       
+    <p id="caption"> Click the cat to see my <br> Digital Portfolio - github!</p>
     
-    <div id="tabColor" class="tab">
-      <button class="tablinks" onclick="openTab(event, 'AboutMe')"><a href = "aboutMe.html" target="_blank"> About Me </a></button>
-      <button class="tablinks" onclick="openTab(event, 'Important')"><a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a></button>
-      <button class="tablinks" onclick="openTab(event, 'Classes')"><a href = "classes.html" target="_blank"> Classes </a></button>
-      <button class="tablinks" onclick="openTab(event, 'ISP')"> <a href = "ISP.html" target="_blank"> ISP </a></button>
-      <button class="tablinks" onclick="openTab(event, 'Learned')"><a href = "learned.html" target="_blank"> What I&apos;ve learned in CS last year </a></button>
-      <button class="tablinks" onclick="openTab(event, 'CS-II')"><a href = "CS-II/index.html" target="_blank"> CS-II </a></button>
+    <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="200" height="200"></a>
 
+
+    <div class="tab"> 
+
+      <a href = "aboutMe.html" target="_blank"> About Me </a> 
+      <a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a>
+      <a href = "classes.html" target="_blank"> Classes </a> 
+      <a href = "ISP.html" target="_blank"> ISP </a>
+      <a href = "learned.html" target="_blank"> What I&apos;ve learned in CS last year </a> 
+      <a href = "CS-II/index.html" target="_blank"> CS-II </a> 
+      
     </div>
 
-    <script>
 
-      function openTab(evt, tabName) {
-          var i, content, tablinks;
-          var content = document.getElementsByClassName("content");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(tabName).style.display = "block";
-          evt.currentTarget.className += " active";
+
+    <!--
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x </a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()"></button>
+      <h2>Collapsed Sidebar</h2>
+
+      <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+    </div>
+    
+    <script>
+      
+      function openNav() {
+	  document.getElementById("mySidebar").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
       }
 
+      function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+      }
       
     </script>
-
+    -->
+    
   </body>
 
 </html>
