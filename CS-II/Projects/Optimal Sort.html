@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../../css/backLink.css">
     <link rel="stylesheet" href="../../css/tabsHorizontal.css">
     <link rel="stylesheet" href="../../css/header.css">
-    
+        
     <style>
 
       .header {
@@ -19,11 +19,24 @@
       }
 
 
+      #bear {
+	  position: absolute;
+	  top: 20px;
+	  right: 56px;
+
+      }
+
+      .charts {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding: 15px;
+      }
+      
       .back {
 	  background-color: #4EC279;
 
       }
-
 
       .tab {
           overflow: hidden;
@@ -31,7 +44,6 @@
 
       }
 
-      
       .tab button:hover {
           background-color: #5C8C68;
       }
@@ -44,30 +56,43 @@
       
       .tabcontent {
 	  background-color: #6B9375;
-	  height: 1000px;
+	  height: 1300px;
       }
 
-      #OptiamlCodelnk {
+
+      .collapsible {
+	  background-color: black;
 	  color: white;
+	  padding: 18px;
+	  width: 100%;
+	  border: solid 2px green;
+	  font-family: Monospace, Courier New;	  
+	  text-align: left;
+	  font-size: 15px;
+      }
+
+      .active, .collapsible:hover {
+	  background-color: #2D7642;
+	  opacity: 0.5;
+      }
+
+      .content {
+	  padding: 0 18px;
+	  display: none;
+	  overflow: hidden;
+
+      }
+
+      #Essay {
+	  margin: 50px;
+	  line-height: 150%;
+	  font-size: 19px;
+	  letter-spacing: 1px;
+	  word-spacing: 5px;
 	  font-family: Monospace, Courier New;
+	  color: black
       }
 
-      #group {
-	  text-align: right;
-      }
-
-      #bear {
-	  position: absolute;
-	  top: 20px;
-	  right: 56px;
-
-      }
-
-      #OptimalChart {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-      }
       
     </style>
 
@@ -90,41 +115,136 @@
       <button class="tablinks" onclick="openTab(event, 'BubbleSort')"> Bubble Sort </button>
       <button class="tablinks" onclick="openTab(event, 'InsertionSort')">  Insertion Sort </button>
       <button class="tablinks" onclick="openTab(event, 'SelectionSort')"> Selection Sort </button>
-      
+      <button class="tablinks" onclick="openTab(event, 'Explanation')"> Explanation </button>
     </div>
 
     
     <div id="OptimalSort" class="tabcontent">
 
-      <p id="group"> Group: Alan Roybal, Zoe Yau, Adheesh Katru, Heng Yi Lee </p>
+      <button type="button" class="collapsible"> Group </button>
+      <div class="content">
+	<p> Group: Alan Roybal, Zoe Yau, Adheesh Katru, Heng Yi Lee </p>
+      </div>
       
-          <p> Click the cat to go to the github! </p>
-          
-      <a id="OptimalCodelnk" href = "https://github.com/AlanRoybal/SortingAlgorithm"> <img id="cat" src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+      <button type="button" class="collapsible"> GitHub Link </button>
+      <div class="content">
 
-            <p> Click the spreadsheet to see the spreadsheet!<p>
+        <p> Click the cat to go to the github! </p>
 	
-      <a href = "https://docs.google.com/spreadsheets/d/1gZGOZT0n0J7knr0OPfO2RaTwvl8f8081O9kz3MK-WEQ/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
-
-      <img id="OptimalChart" src="../../images/SortChart.png" alt="cat" width="500" height="500">
+	<a id="OptimalCodelnk" href = "https://github.com/AlanRoybal/SortingAlgorithm"> <img id="cat" src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+      </div>
       
+      <button type="button" class="collapsible"> Spreadsheet </button>
+      <div class="content">
+	<p> Click to see the spreadsheet!<p>
+	  
+	  <a href = "https://docs.google.com/spreadsheets/d/1gZGOZT0n0J7knr0OPfO2RaTwvl8f8081O9kz3MK-WEQ/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
+      </div>
+      
+      <button type="button" class="collapsible"> Flowchart </button>
+      <div class="content">
+	<img class="charts" src="../../images/SortChart.png" alt="Chart" width="500" height="500">
+      </div>
 
     </div>
 
-
+    
     <div id="BubbleSort" class="tabcontent">
+      
+      <button type="button" class="collapsible"> GitHub Link </button>
+      <div class="content">
+
+        <p> Click the cat to go to the github! </p>
+	
+	<a href = "https://github.com/Zoe-yau/BubbleSort"> <img src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+      </div>
+      
+      <button type="button" class="collapsible"> Spreadsheet </button>
+      <div class="content">
+	<p> Click to see the spreadsheet!<p>
+	  
+	  <a href = "https://docs.google.com/spreadsheets/d/1jYJ6eeNXCjQrB9OesAN5yuSuY_7zwZuDYRkA6UYbL_U/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
+      </div>
+
+      <button type="button" class="collapsible"> Graph </button>
+      <div class="content">
+	<img class="charts" src="../../images/BubbleSortChart.png" alt="Chart" width="700" height="500">
+      </div>
+
     </div>
 
+    
     <div id="InsertionSort" class="tabcontent">
+            <button type="button" class="collapsible"> GitHub Link </button>
+      <div class="content">
+
+        <p> Click the cat to go to the github! </p>
+	
+	<a href = "https://github.com/Zoe-yau/InsertionSort"> <img src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+      </div>
+      
+      <button type="button" class="collapsible"> Spreadsheet </button>
+      <div class="content">
+	<p> Click to see the spreadsheet!<p>
+	  
+	  <a href = "https://docs.google.com/spreadsheets/d/1JfTpmM0yGDvWCpX4VbYEtpXQxILjURd_gfCokXfk1pI/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
+      </div>
+
+      <button type="button" class="collapsible"> Graph </button>
+      <div class="content">
+	<img class="charts" src="../../images/InsertionSortChart.png" alt="Chart" width="700" height="500">
+      </div>
+      
     </div>
+
     
     <div id="SelectionSort" class="tabcontent">
+            <button type="button" class="collapsible"> GitHub Link </button>
+      <div class="content">
+
+        <p> Click the cat to go to the github! </p>
+	
+	<a href = "https://github.com/Zoe-yau/SelectionSort"> <img src="../../images/githublogo.png" alt="cat" width="135" height="135"> </a>
+      </div>
+      
+      <button type="button" class="collapsible"> Spreadsheet </button>
+      <div class="content">
+	<p> Click to see the spreadsheet!<p>
+	  
+	  <a href = "https://docs.google.com/spreadsheets/d/1rj6ozSQs_5cjmXkGDf3ArqAdlnE8s2-VFW39oI_jy1g/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
+      </div>
+
+      <button type="button" class="collapsible"> Graph </button>
+      <div class="content">
+	<img class="charts" src="../../images/SelectionSortChart.png" alt="Chart" width="700" height="500">
+      </div>
     </div>
+
     
+    <div id="Explanation" class="tabcontent">
+
+      <button type="button" class="collapsible"> Spreadsheet </button>
+      <div class="content">
+	
+	<p> Click to see the data comparison of all three averages!<p>
+	  
+	  <a href = "https://docs.google.com/spreadsheets/d/1gnbIzfxr6YHhXTCsCRop7r0tGsEbAqX_9wDdWSOgujw/edit?usp=sharing"> <img src="../../images/sheets.jpg" width="135" height="135"> </a>
+      </div>
+
+      <button type="button" class="collapsible"> Explanation </button>
+      <div class="content">
+
+	<p id="Essay"> &emsp;&emsp; All three of the graphs show the average runtime of trials that I ran on my Bubble Sort, Insertion Sort, and Selection Sort algorithms. Bubble sort works by repeatedly swapping elements until they are in least to greatest order, insertion sort similarly swaps the elements except it compares each element one at a time, and selection sort finds the smallest number in the list and moves it to the front to order them. For each algorithm I ran 5 trials of text files consisting of 1 word, 10 words, 100 words, 1000 words, 10000 words, and 100,000 words. Each text file also had three types - ordered, reverse ordered, and randomized. The x-axis of the graphs represents the number of words that were in each file, and the y-axis represents the time averages of each trial in milliseconds. The three lines on each graph represent each of the file types (ordered, reversed, random). The graphs all grow exponentially due to the time increasing as the number of words in each file is multiplied by 10, so when the lines reach 10,000 words the lines dramatically increase. <br>
+	  &emsp;&emsp; Bubble sort was overall the fastest of the three while selection and insertion sorts had similar results. Amongst all three file types the files that were ordered and only contained one word on average took the longest. For each sort the results for files with 1 and 10 words were fairly similar taking around 4 - 5 milliseconds. Where insertion and selection sort differ from bubble sort is around 100 words insertion and selection sort would hit a sharp increase while bubble sort has a more gradual increase. Overall the data collected was able to effectively show how fast each algorithm works with various files. <br> </p>
+	
+
+      </div>
+
+    </div>
 
 	  
-    <a class="back" href = "Projects.html" target="_blank">Back</a>
-    
+    <a class="back" href = "Projects.html" target="_blank"> Back to Projects Index </a>
+
     <script>
       function openTab(evt, tabName) {
           var i, tabcontent, tablinks;
@@ -139,8 +259,22 @@
           document.getElementById(tabName).style.display = "block";
           evt.currentTarget.className += " active";
       }
-    </script>
 
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	      this.classList.toggle("active");
+	      var content = this.nextElementSibling;
+	      if (content.style.display === "block") {
+		  content.style.display = "none";
+	      } else {
+		  content.style.display = "block";
+	      }
+	  });
+      }
+      </script>
     
   </body>
 

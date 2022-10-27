@@ -1,7 +1,7 @@
 <html>
   <head>
 
-    <link rel="stylesheet" href="/css/title.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <title> Index </title>
 
@@ -9,64 +9,49 @@
 
 	.title {
 	    background-color: #D46A6A;
-	    text-align: center;
-	    color: white;
-	    padding: 30px;
-	    width: 110%;
-	    height: 100px;
-	    position: absolute;
-	    top: -20;
 
 	}
-      
+	
 	#body {
-	    background-color: #FFA1A7;
+	    background-color:  #FFA1A7;
 	    font-family: Monospace, Courier New;
 
 	}
-
-	.tab {
-	    overflow: hidden;
-	    float: left;
-	    width: 250px;
-	    border: 2px solid white;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    background-color: black;
-	    height: 100%;
-
+	
+	.tab a:hover {
+	    background-color: #964448;
 
 	}
 
-	.tab a {
+
+	.dropdownBtn {
+	    background-color: black;
+	    border:none;
 	    display: block;
-	    background-color: inherit;
 	    color: white;
 	    padding: 33px 32px;
-	    width: 200px;
-	    outline: none;
+	    width: 250px;
 	    text-align: center;
-	    transition: 0.3s;
 	    font-size: 18px;
 	    font-family: Monospace, Courier New;
 	}
 
-
-	
-	.tab a:hover {
+	.active {
 	    background-color: #964448;
 	    opacity: 0.5;
-
 	}
 
+	.dropdownLinks {
+	    display: none;
+
+	}
 
 	a {
 	    color: white;
-	    font-family: Monospace, Courier New;
 	    text-decoration: none;
 
 	}
+	
 
 	#flower {
 	    display: block;
@@ -75,14 +60,7 @@
 	    left: 400px;
 	}
 
-	#sideNote {
-	    padding-left: 350px;
-	    position: absolute;
-	    top: 200px;
-	    color: white;
 	
-	}
-
 	#panda {
 	    position: absolute;
 	    top: 8px;
@@ -103,6 +81,12 @@
 	    color: white;
 	    text-align: center;
 
+	}
+
+	#triangle {
+	    position: absolute;
+	    right: 10;
+	    bottom: 270;
 	}
 
       </style>
@@ -130,12 +114,43 @@
       <a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a>
       <a href = "classes.html" target="_blank"> Classes </a> 
       <a href = "ISP.html" target="_blank"> ISP </a>
-      <a href = "learned.html" target="_blank"> What I&apos;ve learned in CS last year </a> 
-      <a href = "CS-II/index.html" target="_blank"> CS-II </a> 
-      
-    </div>
+      <a href = "learned.html" target="_blank"> What I&apos;ve learned in CS last year </a>
+      <a href = "CS-II/index.html" target="_blank"> CS-II</a>
 
+    </div>
     
+
+<!--
+      <button class="dropdownBtn"> <img id="triangle" src="images/triangle.png" alt="triangle" width="30" height="30"> </button>
+      
+      <div class="dropdownLinks">
+	<a href = "CS-II/Essays/essays.html"> Essays </a>
+	<a href = "CS-II/Projects/Projects.html"> Projects </a>
+      </div>
+
+    </div>
+    
+    
+    <script>
+
+      var dropdown = document.getElementsByClassName("dropdownBtn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+	  dropdown[i].addEventListener("click", function() {
+	      this.classList.toggle("active");
+	      var dropdownContent = this.nextElementSibling;
+	      if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+	      } else {
+		  dropdownContent.style.display = "block";
+	      }
+	  });
+      }
+      
+    </script>
+-->
+      
   </body>
 
 </html>

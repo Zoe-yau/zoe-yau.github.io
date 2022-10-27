@@ -1,0 +1,53 @@
+
+.title {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    width: 110%;
+    height: 100px;
+    position: absolute;
+    top: -20;
+
+}
+
+.tab {
+    overflow: hidden;
+    float: left;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+
+
+}
+
+.tab a {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 33px 32px;
+    width: 200px;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: Monospace, Courier New;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.tab a:hover {
+    opacity: 0.5;
+}
+
+#sideNote {
+    padding-left: 350px;
+    position: absolute;
+    top: 200px;
+    color: white;
+    
+}
