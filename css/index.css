@@ -4,7 +4,7 @@
     color: white;
     padding: 30px;
     width: 110%;
-    height: 100px;
+    height: 100vh;
     position: absolute;
     top: -20;
 
@@ -50,4 +50,17 @@
     top: 200px;
     color: white;
     
+}
+
+
+.dropdownBtn {
+    background-color: black;
+    border:none;
+    display: block;
+    color: white;
+    padding: 33px 32px;
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Monospace, Courier New;
 }

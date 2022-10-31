@@ -1,75 +1,121 @@
 <html>
   <head>
-    
+
     <link rel="stylesheet" href="../css/backLink.css">
     <link rel="stylesheet" href="../css/index.css">
-    
+
     <title> CS-II Index </title>
-    
-      <style>     
 
-	
-	.title {
-	    background-color: #A9119A;
-	}
-
-	#body {
-	    background-color: #D66ECC;
-	    font-family: Monospace, Courier New;
-
-	}
-
-	#heart {
-	    position: absolute;
-	    top: -20px;
-	    right: 36px;
-	}
+    <style>
 
 
-	a {
-	    color: white;
-	    font-family: Monospace, Courier New;
-	    text-decoration: none;
+      .title {
+          background-color: #A9119A;
+      }
 
-	}
- 
-	.back {
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    background-color: #73396D;
-	    width: 185px;
-	}
+      #body {
+          background-color: #D66ECC;
+          font-family: Monospace, Courier New;
 
-	.tab a:hover {
-	    background-color: #993E90;	    
-	}
-	
-      </style>
-    
+      }
+
+      #heart {
+          position: absolute;
+          top: -20px;
+          right: 36px;
+      }
+
+
+      a {
+          color: white;
+          font-family: Monospace, Courier New;
+          text-decoration: none;
+
+      }
+
+      .back {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #73396D;
+          width: 185px;
+      }
+
+      .tab a:hover {
+          background-color: #993E90;
+      }
+
+      
+      .active {
+	  background-color: #993E90;
+	  opacity: 0.5;
+      }
+
+      .dropdownLinks {
+	  display: none;
+
+      }
+
+
+    </style>
+
   </head>
 
   <body id="body">
 
     <h1 class="title"> Zoe Yau - Digital Portfolio</h1>
-    
+
     <img id="heart" src="../images/heart.png" alt="Heart" width="250" height="350">
-    
+
     <h3 id="sideNote"> <-- Click the words to navigate! </h3>
 
+    <div class="tab">
 
-     <div class="tab">
 
-      <a href = "Essays/essays.html" target="_blank"> Essays </a>
-      <a href = "Projects/Projects.html" target="_blank"> Projects </a>
+      <button class="dropdownBtn"> Essays </button>
+
+      <div class="dropdownLinks">
+	<a href = "Essays/essays.html"> Essays Index </a>
+	<a href = "Essays/Fingerprints.html"> Fingerprints </a>
+	<a href = "Essays/AI Sentience.html"> AI Sentience </a>
+      </div>
+
       
-    </div>
-    
-    <a class="back" href = "../index.html" target="_blank"> Back to Index </a>
-    
+      <button class="dropdownBtn"> Projects </button>
 
+      <div class="dropdownLinks">
+	<a href = "Projects/Projects.html"> Projects Index </a>
+	<a href = "Projects/Optimal Sort.html"> Optimal Sort </a>
+	<a href = "Projects/Business Plan/index.html"> Business Plan </a>
+      </div>
+
+
+    </div>
+
+
+    <a class="back" href = "../index.html" target="_blank"> Back to Index </a>
+
+        
+    <script>
+
+      var dropdown = document.getElementsByClassName("dropdownBtn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+	  dropdown[i].addEventListener("click", function() {
+	      this.classList.toggle("active");
+	      var dropdownContent = this.nextElementSibling;
+	      if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+	      } else {
+		  dropdownContent.style.display = "block";
+	      }
+	  });
+      }
+      
+    </script>
+
+	
   </body>
 
 </html>
-
-
