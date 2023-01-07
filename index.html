@@ -1,43 +1,100 @@
 <html>
   <head>
 
-    <link rel="stylesheet" href="css/index.css">
-
     <title> Index </title>
 
       <style>     
 
 	.title {
+	    text-align: center;
+	    color: white;
+	    padding: 30px;
+	    width: 110%;
+	    height: 100px;
+	    position: absolute;
+	    top: -20;
 	    background-color: #D46A6A;
-
 	}
 	
 	#body {
 	    background-color:  #FFA1A7;
-	    font-family: Monospace, Courier New;
+	    letter-spacing: 4px;
+	    font-family: "Montserrat", sans-serif;
 
 	}
+
+	.tab {
+	  height: 100%;
+	  width: 250px;
+	  background-color: black;
+	  color: black;
+	  position:fixed;
+	  left:0;
+	  z-index:3;
+	  overflow:auto;
+	  display:block;
+	  top:0;
+	  padding-left: 100px;
+	  color: white;
+	}
+
 	
 	.tab a:hover {
 	    background-color: #964448;
 
 	}
 
-
-	.active {
-	    background-color: #964448;
-	    opacity: 0.5;
-	}
-
-	.dropdownLinks {
-	    display: none;
-
-	}
-
-	a {
+	.menu {
+	    position: relative;
+	    padding-top: 16px;
+	    padding-bottom: 16px;
 	    color: white;
-	    text-decoration: none;
+	}
 
+	.container {
+	    padding-top:64px;
+	    padding-bottom:64px;
+	    font-size:16px;
+	    font-weight: bold;
+	}
+
+	.links {
+	    font-family: "Roboto", sans-serif;
+	    overflow: hidden;
+	    background-color:inherit;
+	    text-decoration: none;
+	    padding: 8px 16px;
+	    display: block;
+	    color: gray;
+
+	}
+
+	.smallTab {
+	    font-size:12px;
+	    font-weight: bold;
+	    display: none;
+	}
+
+	.smallLinks {
+	    text-decoration: none;
+	    padding: 12px 24px;
+	    font-family: "Roboto", sans-serif;
+	    color: gray;
+	    display:block;
+	}
+	
+	    
+	.dropdownBtn {
+	    background-color:inherit;
+	    text-decoration: none;
+	    padding: 8px 16px;
+	    display: block;
+	    color: gray;
+	    border: none;
+	    font-size:16px;
+	    font-weight: bold;
+	    font-family: "Roboto", sans-serif;
+	    letter-spacing: 4px;
 	}
 
 
@@ -48,29 +105,28 @@
 	    left: 400px;
 	}
 
-	
-	#panda {
-	    position: absolute;
-	    top: 8px;
-	    right: 26px;
-	}
-
 	#link {
 	    position: absolute;
 	    right: 46;
-	    bottom: 40;
+	    top: 70;
+	}
 
+	#sideNote {
+	    padding-left: 370px;
+	    position: absolute;
+	    top: 200px;
+	    color: white;
+	    
 	}
 
 	#caption {
 	    position: absolute;
 	    right: 40px;
-	    top: 500px;
+	    top: 10px;
 	    color: white;
 	    text-align: center;
 
 	}
-
 
       </style>
       
@@ -78,39 +134,53 @@
       
   <body id="body">
     
-    <h1 class="title"> Zoe Yau - Digital Portfolio </h1>
+    <h1 class="title">  </h1>
 
     <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
     
     <img id="flower" src="images/flower.png" alt="Flower" width="500" height="500">
 
-    <img id="panda" src="images/panda.png" alt="Panda" width="150" height="150"> 
-       
     <p id="caption"> Click the cat to see my <br> Digital Portfolio - github!</p>
     
-    <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="200" height="200"></a>
+    <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="150" height="150"></a>
 
-
+    
     <div class="tab"> 
 
-      <a href = "aboutMe.html" target="_blank"> About Me </a> 
-      <a href = "whyImportant.html" target="_blank"> Why my Digital Portfolio is important to me? </a>
-      <a href = "classes.html" target="_blank"> Classes </a> 
-      <a href = "ISP.html" target="_blank"> ISP </a>
-      <a href = "learned.html" target="_blank"> What I&apos;ve learned in CS last year </a>
-
-
-      <button class="dropdownBtn"> CS-II </button>
-      
-      <div class="dropdownLinks">
-	<a href = "CS-II/index.html" target="_blank">  CS-II Index </a>
-	<a href = "CS-II/Essays/essays.html"> Essays </a>
-	<a href = "CS-II/Projects/Projects.html"> Projects </a>
+      <div class="menu">
+	<h3><b>Zoe Yau</b></h3>
+	<p>Digital Portfolio</p>
+	<img src="images/panda.png" alt="Panda" width="100" height="100">
       </div>
 
-    </div>
-    
-      
+      <div class="container">
+	<a href = "aboutMe.html" class="links" target="_blank"> About Me </a>	<a href = "whyImportant.html" class="links" target="_blank"> Why my Digital Portfolio is Important to me </a>
+	<a href = "classes.html" class="links" target="_blank"> Classes </a> 
+	<a href = "ISP.html" class="links" target="_blank"> ISP </a>
+	<a href = "learned.html"  class="links" target="_blank"> What I learned in CS-I </a>
+
+	<button class="dropdownBtn"> CS-II Indexes </button>
+	<div class="smallTab">
+	  <a href = "CS-II/index.html" class="smallLinks">  CS-II Index </a>
+	  <a href = "CS-II/Essays/essays.html" class="smallLinks"> Essays Index </a>
+	  <a href = "CS-II/Projects/Projects.html" class="smallLinks"> Projects Index </a>
+	</div>
+
+	<button class="dropdownBtn"> Essays </button>
+	<div class="smallTab">
+	  <a href = "CS-II/Essays/Fingerprints.html" class="smallLinks">  Fingerprints </a>
+	  <a href = "CS-II/Essays/AI Sentience.html" class="smallLinks"> AI Sentience </a>
+	  <a href = "CS-II/Essays/Decision Making.html" class="smallLinks"> Decision Making </a>
+	</div>
+
+	<button class="dropdownBtn"> Projects </button>
+	<div class="smallTab">
+	  <a href = "CS-II/Projects/Optimal Sort.html" class="smallLinks"> Optimal Sort </a>
+	  <a href = "CS-II/Projects/Business Plan/index.html" class="smallLinks"> Business Plan </a>
+	  <a href = "CS-II/Projects/ISP/index.html" class="smallLinks"> ISP </a>
+	</div>
+
+      </div>
     </div>
 
     
