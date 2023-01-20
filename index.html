@@ -73,6 +73,8 @@
 	    font-size:12px;
 	    font-weight: bold;
 	    display: none;
+	    opacity: 0.5;
+	    
 	}
 
 	.smallLinks {
@@ -81,6 +83,7 @@
 	    font-family: "Roboto", sans-serif;
 	    color: gray;
 	    display:block;
+
 	}
 	
 	    
@@ -97,6 +100,9 @@
 	    letter-spacing: 4px;
 	}
 
+	.dropdownBtn:hover {
+	    background-color: #964448;
+	}
 
 	#flower {
 	    display: block;
@@ -154,11 +160,16 @@
       </div>
 
       <div class="container">
-	<a href = "aboutMe.html" class="links" target="_blank"> About Me </a>	<a href = "whyImportant.html" class="links" target="_blank"> Why my Digital Portfolio is Important to me </a>
+	<a href = "aboutMe.html" class="links" target="_blank"> About Me </a>	<a href = "whyImportant.html" class="links" target="_blank"> Importance of My Digital Portfolio </a>
 	<a href = "classes.html" class="links" target="_blank"> Classes </a> 
-	<a href = "ISP.html" class="links" target="_blank"> ISP </a>
-	<a href = "learned.html"  class="links" target="_blank"> What I learned in CS-I </a>
 
+	<button class="dropdownBtn"> CS-I </button>
+	<div class="smallTab">
+	  <a href = "ISP.html" class="links" target="_blank"> CS-I ISP </a>
+	  <a href = "learned.html"  class="links" target="_blank"> What I learned in CS-I </a>
+
+	</div>
+	
 	<button class="dropdownBtn"> CS-II Indexes </button>
 	<div class="smallTab">
 	  <a href = "CS-II/index.html" class="smallLinks">  CS-II Index </a>
