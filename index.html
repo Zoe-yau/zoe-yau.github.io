@@ -1,29 +1,50 @@
+<!DOCTYPE html>
 <html>
   <head>
 
     <title> Index </title>
 
-      <style>     
+    <style>     
 
-	.title {
-	    text-align: center;
-	    color: white;
-	    padding: 30px;
-	    width: 110%;
-	    height: 100px;
-	    position: absolute;
-	    top: -20;
-	    background-color: #D46A6A;
-	}
-	
-	#body {
-	    background-color:  #FFA1A7;
-	    letter-spacing: 4px;
-	    font-family: "Montserrat", sans-serif;
+      .cover {
+	  opacity: 0.5;
+	  height: 300px;
+	  width: 115%;
+      }
 
-	}
+      body {
+	  padding: 0;
+	  margin: 0;
+	  background-color: #292928;
+	  letter-spacing: 4px;
+	  font-family: "Montserrat", sans-serif;
+      }
 
-	.tab {
+      #flower {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+      }
+
+      #link {
+	  float: right;
+	  position: absolute;
+	  top: 50px;
+	  right:70px;
+	  padding:20px;
+      }
+
+      #caption {
+	  color: white;
+	  text-align: right;
+	  position: absolute;
+	  top: 50px;
+	  right:180px;
+	  padding: 20px;
+      }
+
+
+      .tab {
 	  height: 100%;
 	  width: 250px;
 	  background-color: black;
@@ -36,119 +57,144 @@
 	  top:0;
 	  padding-left: 100px;
 	  color: white;
-	}
+      }
 
-	
-	.tab a:hover {
-	    background-color: #964448;
-
-	}
-
-	.menu {
-	    position: relative;
-	    padding-top: 16px;
-	    padding-bottom: 16px;
-	    color: white;
-	}
-
-	.container {
-	    padding-top:64px;
-	    padding-bottom:64px;
-	    font-size:16px;
-	    font-weight: bold;
-	}
-
-	.links {
-	    font-family: "Roboto", sans-serif;
-	    overflow: hidden;
-	    background-color:inherit;
-	    text-decoration: none;
-	    padding: 8px 16px;
-	    display: block;
-	    color: gray;
-
-	}
-
-	.smallTab {
-	    font-size:12px;
-	    font-weight: bold;
-	    display: none;
-	    opacity: 0.5;
-	    
-	}
-
-	.smallLinks {
-	    text-decoration: none;
-	    padding: 12px 24px;
-	    font-family: "Roboto", sans-serif;
-	    color: gray;
-	    display:block;
-
-	}
-	
-	    
-	.dropdownBtn {
-	    background-color:inherit;
-	    text-decoration: none;
-	    padding: 8px 16px;
-	    display: block;
-	    color: gray;
-	    border: none;
-	    font-size:16px;
-	    font-weight: bold;
-	    font-family: "Roboto", sans-serif;
-	    letter-spacing: 4px;
-	}
-
-	.dropdownBtn:hover {
-	    background-color: #964448;
-	}
-
-	#flower {
-	    display: block;
-	    position: absolute;
-	    top: 300px;
-	    left: 400px;
-	}
-
-	#link {
-	    position: absolute;
-	    right: 46;
-	    top: 70;
-	}
-
-	#sideNote {
-	    padding-left: 370px;
-	    position: absolute;
-	    top: 200px;
-	    color: white;
-	    
-	}
-
-	#caption {
-	    position: absolute;
-	    right: 40px;
-	    top: 10px;
-	    color: white;
-	    text-align: center;
-
-	}
-
-      </style>
       
+      .tab a:hover {
+	  background-color: #964448;
+
+      }
+
+      .menu {
+	  position: relative;
+	  padding-top: 16px;
+	  padding-bottom: 16px;
+	  color: white;
+      }
+
+      .container {
+	  padding-top:64px;
+	  padding-bottom:64px;
+	  font-size:16px;
+	  font-weight: bold;
+      }
+
+      .links {
+	  font-family: "Roboto", sans-serif;
+	  overflow: hidden;
+	  background-color:inherit;
+	  text-decoration: none;
+	  padding: 8px 16px;
+	  display: block;
+	  color: gray;
+
+      }
+
+      .smallTab {
+	  font-size:12px;
+	  font-weight: bold;
+	  display: none;
+	  opacity: 0.5;
+	  
+      }
+
+      .smallLinks {
+	  text-decoration: none;
+	  padding: 12px 24px;
+	  font-family: "Roboto", sans-serif;
+	  color: gray;
+	  display:block;
+
+      }
+      
+      .dropdownBtn {
+	  background-color:inherit;
+	  text-decoration: none;
+	  padding: 8px 16px;
+	  display: block;
+	  color: gray;
+	  border: none;
+	  font-size:16px;
+	  font-weight: bold;
+	  font-family: "Roboto", sans-serif;
+	  letter-spacing: 4px;
+      }
+
+      .dropdownBtn:hover {
+	  background-color: #964448;
+      }
+
+      .row {
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+
+      }
+
+      .column {
+	  flex: 25%;
+	  max-width: 25%;
+	  padding: 0 4px;
+
+      }
+
+      .column img {
+	  margin-left: 350px;
+	  margin-top: 8px;
+	  vertical-align: middle;
+	  width: 100%;
+      }
+
+    </style>
+    
   </head>
-      
-  <body id="body">
-    
-    <h1 class="title">  </h1>
+  
+  <body>
 
-    <h3 id="sideNote"> <-- Click the words to navigate!  </h3>
-    
-    <img id="flower" src="images/flower.png" alt="Flower" width="500" height="500">
+    <div class="header">
+      <img class="cover" src="images/sunset.JPG">
+      <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="100" height="100"></a>
+      <p id="caption"> Click the cat to see my <br> Digital Portfolio - github!</p>
 
-    <p id="caption"> Click the cat to see my <br> Digital Portfolio - github!</p>
-    
-    <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="150" height="150"></a>
+    </div>
+
+    <div class="row">
+      <div class="column">
+	<img src="images/photoGallery/photo1.JPG" style="width:100%">
+	<img src="images/photoGallery/photo3.jpg" style="width:100%">	
+	<img src="images/photoGallery/photo2.JPG" style="width:100%">
+	<img src="images/photoGallery/photo4.jpg" style="width:100%">
+	<img src="images/photoGallery/photo5.jpg" style="width:100%">
+	<img src="images/photoGallery/photo7.jpg" style="width:100%">
+	<img src="images/photoGallery/photo6.jpg" style="width:100%">
+	<img src="images/photoGallery/photo19.jpg" style="width:100%">
+	<img src="images/photoGallery/photo16.JPG" style="width:100%">	
+      </div>
+
+      <div class="column">
+	<img src="images/photoGallery/photo8.jpg" style="width:100%">
+	<img src="images/photoGallery/photo9.JPG" style="width:100%">
+	<img src="images/photoGallery/photo28.JPG" style="width:100%">
+	<img src="images/photoGallery/photo30.JPG" style="width:100%">
+	<img src="images/photoGallery/photo17.JPG" style="width:100%">
+	<img src="images/photoGallery/photo10.JPG" style="width:100%">
+	<img src="images/photoGallery/photo13.jpg" style="width:100%">
+      </div>
+
+      <div class="column">
+	<img src="images/photoGallery/photo14.JPG" style="width:100%">
+	<img src="images/photoGallery/photo21.JPG" style="width:100%">
+	<img src="images/photoGallery/photo26.JPG" style="width:100%">
+	<img src="images/photoGallery/photo15.JPG" style="width:100%">
+	<img src="images/photoGallery/photo27.JPG" style="width:100%">	
+	<img src="images/photoGallery/photo12.JPG" style="width:100%">
+	<img src="images/photoGallery/photo29.JPG" style="width:100%">	
+	<img src="images/photoGallery/photo32.JPG" style="width:100%">
+	<img src="images/photoGallery/photo22.JPG" style="width:100%">
+	<img src="images/photoGallery/photo11.JPG" style="width:100%; height:170px; object-fit: cover;">	
+      </div>
+
+    </div>
 
     
     <div class="tab"> 
@@ -214,7 +260,7 @@
       
     </script>
 
-      
+    
   </body>
 
 </html>

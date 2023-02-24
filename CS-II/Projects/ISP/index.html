@@ -10,7 +10,6 @@
     <style>     
 
       #body {
-
 	  background: #E8C0B7;
 	  padding: 0;
 	  margin: 0;
@@ -21,8 +20,8 @@
 	  background-image: linear-gradient(90deg, #FF9B9B, #D6D6D6);
 	  position:relative;
 	  width:100%;
-	  z-index:1;
-	  
+	  height: 160px;
+
       }
 
       .top {
@@ -37,8 +36,10 @@
       #title {
 	  text-align: center;
 	  color: white;
-	  text-shadow: 3px 2px #969694;
+	  text-shadow: 2px 2px #969694;
+	  font-size: 40px;
 	  font-family: "Lucida Handwriting", cursive;
+	  padding: 20px;
       }
 
       a {
@@ -96,36 +97,37 @@
       .topButtons {
 	  border-top-style: solid;
 	  border-top-color: white;
-	  border-top-width: 1px;
+	  border-top-width: 5px;
+	  margin-top: 10px;
+	  margin-bottom: 100px;
       }
 
       .image {
-	  float: right;
-	  margin-left: 5px;
+	  float:left;
+	  margin-right: 5px;
+	  margin-left: 1px;
       }
+      
     </style>
-    
-    
+        
   </head>
 
   <body id="body">
     
     <div class="header">
+
       <div class="top">
 	<h1 id="title"> ISP </h1>
-	
-	<div class="topButtons">
-	  <a  href="Journal.html" class="linkStyle"> Journal <img class="image" src="../../../images/journal.png" alt="Git" width="30" height="30"> </a>
-	</div>
-	
-	<div class="topButtons">
-	  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe" class="linkStyle"> GitHub <img class="image" src="../../../images/githublogo.png" alt="Git" width="30" height="30"> </a>
-
-	</div>
-
       </div>
     </div>
-    
+
+    <div class="topButtons">
+      <a  href="Journal.html" class="linkStyle"> Journal <img class="image" src="../../../images/journal.png" alt="Git" width="35" height="35"> </a>
+      
+      <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe" class="linkStyle"> GitHub <img class="image" src="../../../images/githublogo.png" alt="Git" width="30" height="30"> </a>
+
+    </div>
+
     <div class="content">
       <h4> Team Members: </h4>
       <ul>
@@ -169,8 +171,10 @@
 
       </div>
     </div>
-    
+
+
     <a class="back" href = "../../../index.html" target="_blank"> Back to Home Index </a>
+
 
   </body>
 
