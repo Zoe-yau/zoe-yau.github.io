@@ -7,9 +7,9 @@
     <style>     
 
       .cover {
-	  opacity: 0.5;
 	  height: 300px;
-	  width: 104%;
+	  width: 100%;
+	  object-fit: cover;
       }
 
       body {
@@ -24,23 +24,6 @@
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
-      }
-
-      #link {
-	  float: right;
-	  position: absolute;
-	  top: 50px;
-	  right:70px;
-	  padding:20px;
-      }
-
-      #caption {
-	  color: white;
-	  text-align: right;
-	  position: absolute;
-	  top: 50px;
-	  right:180px;
-	  padding: 20px;
       }
 
 
@@ -145,6 +128,41 @@
 	  width: 100%;
       }
 
+      .header h1 {
+	  position: absolute;
+	  top: 0;
+	  right: 5px;
+	  padding: 20px;
+	  margin-left: 350px;
+	  font-size: 90px;
+	  letter-spacing: 3px;
+	  color: white;
+      }
+
+      .linkStyle {
+      	  text-decoration: none;
+	  color: black;
+	  font-size: 20px;
+	  font-family: "Roboto", sans-serif;
+	  float: left;
+	  padding: 6px 16px;
+	  border-left-style: solid;
+	  border-right-style: solid;
+	  margin: 10px;
+	  
+      }
+      
+      .topButtons {
+	  border-top-style: solid;
+	  border-top-color: white;
+	  border-top-width: 5px;
+	  margin-top: 10px;
+	  margin-bottom: 100px;
+	  position: absolute;
+	  top: 180px;
+	  right: 10px;
+      }
+
     </style>
     
   </head>
@@ -152,10 +170,16 @@
   <body>
 
     <div class="header">
-      <img class="cover" src="images/sunset.JPG">
-      <a id="link" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"><img src="images/githublogo.png" alt="Git" width="100" height="100"></a>
-      <p id="caption"> Click the cat to see my <br> Digital Portfolio - github!</p>
 
+      
+      <img class="cover" src="images/sunset.JPG"> 
+      <h1 id="current-time"></h1>
+
+      <div class="topButtons">
+	<a class="linkStyle" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"> Click to see my Digital Portfolio - github! <img src="images/githublogo.png" alt="Git" width="50" height="50"></a>
+
+      </div>
+      
     </div>
 
     <div class="row">
@@ -261,6 +285,7 @@
       </div>
     </div>
 
+
     
     <script>
 
@@ -278,7 +303,15 @@
 	      }
 	  });
       }
-      
+
+
+      let time = document.getElementById("current-time");
+
+      setInterval(() => {
+	  let d = new Date();
+	  time.innerHTML = d.toLocaleTimeString();
+      },1000)
+
     </script>
 
     
