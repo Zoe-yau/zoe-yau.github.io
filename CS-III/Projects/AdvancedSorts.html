@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title> AdvancedSorts </title>
+    
+    <style>
+
+      html {
+	  font: 400 17px/1.33 "Times New Roman";
+	  line-height: 200%;
+	  background-color: #191919;
+      }
+
+      body {
+	  padding-bottom: 48px;
+	  background: url("../../images/computerAlg.png");
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-position-x: 50px;
+	  background-position-y: 70px;
+	  
+      }
+
+ 
+      .leftSide {
+	  box-shadow: inset 0 0 80px 16px #000;
+	  background-size: cover;
+	  width: 50%;
+	  height: 500%;
+	  color: #191919;
+
+      }
+
+      .leftSide {
+	  position: absolute;
+	  top: 70px;
+	  left: 0;
+	  bottom: 0;
+      }
+
+
+      hr {
+	  overflow: visible;
+	  padding: 0;
+	  border: none;
+	  border-top: medium double #333;
+	  color: #333;
+	  text-align: center;
+      }
+
+      article {
+	  color: #ccc;
+	  margin-left: 50%;
+	  position: relative;
+	  max-width: 1056px;
+      }
+
+      header {
+	  text-align: center;
+	  padding: 0 32px;
+      }
+
+      h1 {
+
+	  text-transform: uppercase;
+	  font-weight: 400;
+
+	  .headline-1,
+	  .headline-2 {
+	      line-height: 1;
+	  }
+
+	  .headline-1 {
+	      font-size: 100px;
+	  }
+
+	  .headline-2 {
+	      font-size: 100px;
+	  }
+      }
+
+      .subheading {
+	  color: #ccc;
+	  font-size: 25px;
+	  max-width: 500px;
+	  margin: 0 auto;
+	  text-align: center;
+	  padding-bottom: 24px;
+      }
+
+      section {
+	  column-width: 224px;
+	  column-gap: 21.28px;
+	  padding: 0 48px;
+	  
+	  p:first-of-type:first-letter {
+	      float: left;
+	      font-size: 112px;
+	      line-height: 1;
+	      margin-top: -3.2px;
+	      margin-bottom: -3.2px;
+	      margin-right: 1.6px;
+	  }
+      }
+      
+      img {
+	  max-width: 100%;
+	  margin-bottom: 21.28px;
+	  vertical-align: middle;
+      }
+
+      .page {
+	  height: 700px;
+	  margin: 50px auto;
+	  padding-top: 40px;
+      }
+
+      #content {
+	  padding-top: 150px;
+	  padding-left: 56px;
+	  padding-right: 36px;
+	  padding-bottom: 56px;
+	  line-height: 200%;
+	  font-size: 19px;
+	  letter-spacing: 1px;
+	  word-spacing: 5px;
+	  text-align: center;
+      }
+
+      ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: black;
+      }
+
+      li {
+	  float: left;
+      }
+
+      li a, .dropbtn {
+	  display: inline-block;
+	  color: gray;
+	  font-family: "Roboto", sans-serif;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+      }
+
+      li a:hover, .dropdown:hover .dropbtn {
+	  background-color: #964448;
+      }
+
+      li.dropdown {
+	  display: inline-block;
+      }
+
+      .dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #333;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+      }
+
+      .dropdown-content a {
+	  color: gray;
+	  font-family: "Roboto", sans-serif;
+	  padding: 12px 16px;
+	  letter-spacing: 4px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+      }
+
+      .dropdown:hover .dropdown-content {
+	  display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <ul>
+
+      <li><a href="../../aboutMe.html"> About Me </a></li>
+      <li><a href="../../whyImportant.html"> Importance of my Digital Portfolio </a></li>
+      <li><a href="../../classes.html"> Classes </a></li>
+      <li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">CS-I</a>
+	<div class="dropdown-content">
+	  <a href="../../ISP.html"> ISP </a>
+	  <a href="../../learned.html"> What I Learned </a>
+	</div>
+      </li>
+      <li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">CS-II</a>
+	<div class="dropdown-content">
+	  <a href="../../CS-II/Projects/Projects.html"> Projects </a>
+	  <a href="../../CS-II/Essays/essays.html"> Essays </a>
+	</div>
+      </li>
+      <li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">CS-III</a>
+	<div class="dropdown-content">
+	  <a href="AdvancedSorts.html"> Advanced Sorts </a>
+	</div>
+      </li>
+      
+    </ul>
+
+      <div class="leftSide"> <p>  </p> </div>
+
+    <article>
+      <header>
+	<h1>
+	  <div class="headline-1">
+            Advanced 
+	  </div>
+	  <div class="headline-2">
+            Sorts
+	  </div>
+	</h1>
+	<p class="subheading"> &apos;Mastering the Art of Sorting: Unveiling Advanced Sorting Techniques&apos; </p>
+      </header>
+      <hr/>
+
+      <div class="page">
+	<div id="content">
+
+	  <p> AI Sentience <br>
+	    Zoe Yau <br>
+	    Allen ISD STEAM Center <br>
+	    Advanced Computer Science II <br>
+	    David Ben-Yaakov <br>
+	    Septemeber 2, 2022 <br>
+	  </p>
+
+	  
+	</div>
+      </div>
+      
+      <hr> </hr>
+
+      
+      <section>
+
+	<p> <h1> Merge Sort </h1>
+	  Merge sort uses the divide and conquer method in order to sort lists. Firstly, the array is split into two equal sublists. The lists are then continuously split in half until each sublist contains only one element. Once the arrays are divided into the smallest possible sublists they are then merged back together by repeatedly taking the smallest element from the sublists and putting it into a final merged list. The algorithm continues until all of the elements are merged and sorted.  Merge sort is good for large data sets but can be problematic with extremely large datasets because of the space complexity. 
+	</p>
+
+	<img alt="Merge Sort" src="../../images/mergesort.png"/>
+	
+	<p> <h1> QuickSort </h1>
+	  QuickSort selects a &apos;pivot&apos; element and splits the other elements into two sub arrays according to whether they are less than or greater than the pivot. The algorithm begins with choosing a pivot element from the array, usually the pivot element is the first, last, or middle element. After that the elements are rearranged so that all elements smaller than the pivot come before and all the elements greater than the pivot come after. This is achieved through swapping the elements until they are split correctly. The algorithm is then repeated on both of the sub-arrays until they contain one or zero elements making the array sorted. QuickSort is widely used and typically faster than merge and heapsort in real world applications. 
+	</p>
+
+	<img alt="Quick Sort" src="../../images/quicksort.png"/>
+	
+	<p> <h1> HeapSort </h1>
+	  The heapsort algorithm uses a binary heap data structure in order to compare and sort the array. It starts with building a binary from the input array. To do this the algorithm rearranges the elements in the array to satisfy the heap property. For example, in a max-heap, every parent node has a value greater than or equal to its children. Next is the sorting phase where elements are extracted from the heap one by one. This involves repeatedly swapping the largest element with the last element in the heap and reducing the heap size by one. The element is then “sunk” into a new root to its correct position to maintain the heap property. This process is repeated until all the elements are extracted from the heap and is sorted in descending order. 
+	</p>
+
+	<img alt="Heap Sort" src="../../images/heapsort.png"/>
+	
+	<p> <h1> Time Complexity </h1>
+	  The time complexity of merge sort, quicksort, and heap sort is O(n log n). This means that all three are efficient sorting algorithms for large data sets. However, quicksort can have a worst-case time complexity of O(n^2) if the pivot selection consistently leads to unbalanced separations. 
+	</p>
+
+	<img alt="FlowChart" src="../../images/colorChart.png"/>
+	
+	<p> <h1> Space Complexity </h1>
+	  The space complexity of merge sort is O(n) meaning that it typically requires additional space. The quicksort algorithm has a base case space complexity of O(log n), and it can have a worst case complexity of O(n). However, the quick sort space complexity is typically considered favorable. The heapsort has a space complexity of O(1) meaning it uses a constant amount of extra memory regardless of the input side. It may even be slower in practice compared to quick and merge sort. 
+	</p>
+
+
+	
+	<p>
+	  Sorting algorithms are helpful when dealing with extensive amounts ofdata that needs to be organized rapidly and effectively. These algorithms are meant to optimize performance and reduce time complexity for sorting larger datasets. 
+	</p>
+
+	
+      </section>
+    </article>
+
+
+    <script>
+      /*
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          var tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+	  }
+	  */
+    </script>
+
+
+  </body>
+</html>

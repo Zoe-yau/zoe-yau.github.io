@@ -2,14 +2,19 @@
 <html>
   <head>
 
-    <title> Index </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa:wght@300&family=Foldit:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    
+    <Title> Index </title>
 
     <style>     
 
       .cover {
 	  height: 300px;
 	  width: 100%;
-	  object-fit: cover;
+
       }
 
       body {
@@ -92,7 +97,7 @@
       
       .dropdownBtn {
 	  background-color:inherit;
-	  text-decoration: none;
+	  text-decoration: none;p
 	  padding: 8px 16px;
 	  display: block;
 	  color: gray;
@@ -128,6 +133,7 @@
 	  width: 100%;
       }
 
+
       .header h1 {
 	  position: absolute;
 	  top: 0;
@@ -135,13 +141,24 @@
 	  padding: 20px;
 	  margin-left: 350px;
 	  font-size: 90px;
-	  letter-spacing: 3px;
+	  font-family: 'Raleway', sans-serif;
 	  color: white;
+	  letter-spacing: 3px;
+      }
+
+      .header h2 {
+	  position: absolute;
+	  top: 0;
+	  right: 10px;
+	  font-size: 30px;
+	  color: white;
+	  font-family: 'Comfortaa', cursive;
+
       }
 
       .linkStyle {
       	  text-decoration: none;
-	  color: black;
+	  color: white;
 	  font-size: 20px;
 	  font-family: "Roboto", sans-serif;
 	  float: left;
@@ -172,12 +189,14 @@
     <div class="header">
 
       
-      <img class="cover" src="images/sunset.JPG"> 
+      <img class="cover" src="images/sunset.JPG">
+      <h2 id="date"></h2>
       <h1 id="current-time"></h1>
 
       <div class="topButtons">
 	<a class="linkStyle" href ="https://github.com/Zoe-yau/zoe-yau.github.io" target="_blank"> Click to see my Digital Portfolio - github! <img src="images/githublogo.png" alt="Git" width="50" height="50"></a>
-
+	
+	
       </div>
       
     </div>
@@ -252,8 +271,8 @@
 
       <div class="container">
 	<a href = "aboutMe.html" class="links" target="_blank"> About Me </a>	<a href = "whyImportant.html" class="links" target="_blank"> Importance of My Digital Portfolio </a>
-	<a href = "classes.html" class="links" target="_blank"> Classes </a> 
-	<a href = "blogs.html" class="links" target="_blank"> Blogs </a> 	
+	<a href = "classes.html" class="links" target="_blank"> Classes </a>
+	
 	<button class="dropdownBtn"> CS-I </button>
 	<div class="smallTab">
 	  <a href = "ISP.html" class="links" target="_blank"> CS-I ISP </a>
@@ -261,13 +280,21 @@
 
 	</div>
 	
-	<button class="dropdownBtn"> CS-II Indexes </button>
+	<button class="dropdownBtn"> CS-II </button>
+	
+	<div class="smallTab">
+
+	<a href = "blogs.html" class="links" target="_blank"> Blogs </a>
+
+	<button class="dropdownBtn"> Indexes </button>
 	<div class="smallTab">
 	  <a href = "CS-II/index.html" class="smallLinks">  CS-II Index </a>
 	  <a href = "CS-II/Essays/essays.html" class="smallLinks"> Essays Index </a>
 	  <a href = "CS-II/Projects/Projects.html" class="smallLinks"> Projects Index </a>
+
 	</div>
 
+	
 	<button class="dropdownBtn"> Essays </button>
 	<div class="smallTab">
 	  <a href = "CS-II/Essays/Fingerprints.html" class="smallLinks">  Fingerprints </a>
@@ -282,6 +309,14 @@
 	  <a href = "CS-II/Projects/ISP/index.html" class="smallLinks"> ISP </a>
 	</div>
 
+	</div>
+
+	<button class="dropdownBtn"> CS-III </button>
+	<div class="smallTab">
+	  <a href = "CS-III/Projects/AdvancedSorts.html" class="smallLinks"> Advanced Sorts </a>
+	</div>
+
+	
       </div>
     </div>
 
@@ -304,13 +339,15 @@
 	  });
       }
 
-
       let time = document.getElementById("current-time");
-
       setInterval(() => {
-	  let d = new Date();
-	  time.innerHTML = d.toLocaleTimeString();
-      },1000)
+	  let t = new Date();
+	  time.innerHTML = t.toLocaleTimeString('en-US', { hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric'});
+      }, 1000);
+
+      var dt = new Date();
+      document.getElementById("date").innerHTML = dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'
+      });
 
     </script>
 
