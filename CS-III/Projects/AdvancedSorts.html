@@ -14,7 +14,7 @@
 
       body {
 	  padding-bottom: 48px;
-	  background: url("../../images/computerAlg.png");
+	  background: url("../../images/advancedSorts/computerAlg.png");
 	  background-repeat: no-repeat;
 	  background-attachment: fixed;
 	  background-position-x: 50px;
@@ -236,7 +236,7 @@
       <div class="page">
 	<div id="content">
 
-	  <p> AI Sentience <br>
+	  <p> Advanced Sorts <br>
 	    Zoe Yau <br>
 	    Allen ISD STEAM Center <br>
 	    Advanced Computer Science II <br>
@@ -256,25 +256,25 @@
 	   &emsp;&emsp;&emsp;&emsp;Merge sort uses the divide and conquer method in order to sort lists. Firstly, the array is split into two equal sublists. The lists are then continuously split in half until each sublist contains only one element. Once the arrays are divided into the smallest possible sublists they are then merged back together by repeatedly taking the smallest element from the sublists and putting it into a final merged list. The algorithm continues until all of the elements are merged and sorted.  Merge sort is good for large data sets but can be problematic with extremely large datasets because of the space complexity. 
 	</p>
 
-	<img alt="Merge Sort" src="../../images/mergesort.png"/>
+	<img alt="Merge Sort" src="../../images/advancedSorts/mergesort.png"/>
 	
 	<p> <h1> QuickSort </h1>
 	   &emsp;&emsp;&emsp;&emsp;QuickSort selects a &apos;pivot&apos; element and splits the other elements into two sub arrays according to whether they are less than or greater than the pivot. The algorithm begins with choosing a pivot element from the array, usually the pivot element is the first, last, or middle element. After that the elements are rearranged so that all elements smaller than the pivot come before and all the elements greater than the pivot come after. This is achieved through swapping the elements until they are split correctly. The algorithm is then repeated on both of the sub-arrays until they contain one or zero elements making the array sorted. QuickSort is widely used and typically faster than merge and heapsort in real world applications. 
 	</p>
 
-	<img alt="Quick Sort" src="../../images/quicksort.png"/>
+	<img alt="Quick Sort" src="../../images/advancedSorts/quicksort.png"/>
 	
 	<p> <h1> HeapSort </h1>
 	   &emsp;&emsp;&emsp;&emsp;The heapsort algorithm uses a binary heap data structure in order to compare and sort the array. It starts with building a binary from the input array. To do this the algorithm rearranges the elements in the array to satisfy the heap property. For example, in a max-heap, every parent node has a value greater than or equal to its children. Next is the sorting phase where elements are extracted from the heap one by one. This involves repeatedly swapping the largest element with the last element in the heap and reducing the heap size by one. The element is then placed into its correct position to maintain the heap property. This process is repeated until all the elements are extracted from the heap and is sorted in descending order. 
 	</p>
 
-	<img alt="Heap Sort" src="../../images/heapsort.png"/>
+	<img alt="Heap Sort" src="../../images/advancedSorts/heapsort.png"/>
 	
 	<p> <h1> Time Complexity </h1>
 	   &emsp;&emsp;&emsp;&emsp;The time complexity of merge sort, quicksort, and heap sort is O(n log n). This means that all three are efficient sorting algorithms for large data sets. However, quicksort can have a worst-case time complexity of O(n^2) if the pivot selection consistently leads to unbalanced separations. 
 	</p>
 
-	<img alt="FlowChart" src="../../images/colorChart.png"/>
+	<img alt="FlowChart" src="../../images/advancedSorts/colorChart.png"/>
 	
 	<p> <h1> Space Complexity </h1>
           &emsp;&emsp;&emsp;&emsp;The space complexity of merge sort is O(n) meaning that it typically requires additional space. The quicksort algorithm has a base case space complexity of O(log n), and it can have a worst case complexity of O(n). However, the quick sort space complexity is typically considered favorable. The heapsort has a space complexity of O(1) meaning it uses a constant amount of extra memory regardless of the input side. It may even be slower in practice compared to quick and merge sort. 
